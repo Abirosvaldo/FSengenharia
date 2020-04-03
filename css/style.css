@@ -51,10 +51,6 @@ img {
 
 /* Estilos Header *********************************************************** */
 
-
-
-
-
 .header {
     position: fixed; /* deixa a barra de menu fixa  */
     top: 0px;
@@ -85,6 +81,10 @@ img {
 
 }
 
+.header_menu ul li a.menu-ativo {
+    color: #fff;
+}
+
 .header_menu ul li a:hover { /*cor do link */
      color: #fff;
  }
@@ -102,11 +102,13 @@ img {
 }
 
 .introducao h1 {
-    font-size: 28px;
-    color: #fff;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 70px;
+    text-shadow: -1px 0 black, 0 1px black;
+    margin-bottom: 16px;
 
 }
 
@@ -115,6 +117,7 @@ img {
     color: #fff;
     margin-bottom: 30px;
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black;
 }
 
 .quote-externo{
@@ -128,6 +131,56 @@ img {
 .quote-externo p {
     font-style: italic;
 }
+
+/* *************** INTRODUÇÂO INTERNA *********** */
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.introducao-interna h1 {
+    font-size: 30px;    
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+
+.introducao-interna h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto ; 
+
+}
+
+.subtitulo-sobre {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;    
+    margin-bottom: 20px;
+}
+
+.subtitulo-sobre:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px; 
+}
+
+/* ******************* FIM INTRODUCAO- INTERNA *************** */
+
 
 /* para fazer os risquinhos da imagem*/
 .quote-externo p:before, .quote-externo p::after {
@@ -147,6 +200,8 @@ img {
     letter-spacing: .1em; /* espaço entre as letras*/
 
 }
+
+
 
 /* **************** FIM HEADER ********************* */
 
@@ -259,6 +314,7 @@ img {
 
 .qualidade_lista {
     padding-top: 20px;
+    overflow: auto; /* clear-fix  limpa a flutuaçaõ*/
 }
 
 .qualidade img {
@@ -288,6 +344,10 @@ img {
     background: #000;
     margin: 6px auto; 
 }
+
+/* ******************* FIM QUALIDADE ************ */
+
+/* ****************** CALL ACTION *************** */
 
 .call-action {
     width: 100%;
@@ -335,5 +395,63 @@ img {
     margin: -9px auto;
 }
 
+/* **************** FIM CALL ACTION ***************** */
 
+/* ************** FOOTER *********************** */
+
+.footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: bold;
+}
+
+.footer h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fec63e;
+    margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.footer_redes ul li {
+    display: inline-block;
+}
+
+.footer_redes ul li a {
+    border: 3px solid #fec63e;
+   display: block;
+   padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+    border-color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background: #fec63e;
+    padding: 20px 0;
+}
 
