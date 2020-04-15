@@ -1,0 +1,27 @@
+.interna-portfolio {
+    background: url("../img/sobre.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.clientes {
+   height: 170px;
+
+}
+
+.clientes h2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.clientes h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto; 
+}
