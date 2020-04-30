@@ -1,7 +1,28 @@
 /*Estilo para tablets*/
 @media only screen and (min-width: 788px) and (max-width: 979px) {
 
+	.qualidade::after {		
+		right: 162px;
+			
+	}	
 
+	.qualidade_lista li {		
+		padding: 0 10px;
+		margin-left: 50px;
+
+		
+	}
+
+	.footer_redes ul li a {
+		border: 3px solid #fec63e;
+		display: block;
+		padding: 6px;
+	}
+
+	.footer_redes ul li a img {
+		width: 26px;
+		height: 26px;
+	}
 
 }
 
@@ -37,13 +58,69 @@
 	border-color: #fff;
 }
 
+.header_menu ul li a.menu-ativo {
+	border-color: #fff;
+}
+
 /*Introducao*/
 
 .introducao {
 	margin-top: 0px;
 	padding-top: 20px;
-	background: url("../img/bg-mobile.jpg") no-repeat center;
+	/*background: url("../img/bg-mobile.jpg") no-repeat center;*/
 	background-size: cover;
 }
+
+.introducao-interna {
+	margin-top: 0px;
+}
+
+/* call action botao que eu fiz */
+
+.call {
+    padding-top: 20px;    
+}
+
+.call-action {
+	padding: 10px;	
+    height: 160px;
+		    
+}
+.call-action h2 {	
+	line-height: 25px;
+	text-align: center; 
+	padding-bottom: 5px; 
+	
+   
+}
+
+.call-action h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto; 
+}
+
+/* Sobre */
+
+.missao-sobre p {
+	padding-right: 0px;
+	font-size: 14px;
+	line-height: 20px;
+	
+}
+
+.missao-sobre ul li {
+	font-size: 14px;
+	line-height: 25px;
+
+}
+
+.qualidade:after {
+	display: none;
+}
+
 
 }

@@ -456,3 +456,8 @@ img {
     padding: 20px 0;
 }
 
+.qualidade:after {
+    display: none;
+
+}
+
